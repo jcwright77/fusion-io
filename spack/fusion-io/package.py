@@ -27,6 +27,7 @@ class FusionIo(CMakePackage):
     depends_on("fortran", type="build")
     depends_on("mpi")
     depends_on("hdf5")
+    depends_on("lapack")
     depends_on("cmake@3:", type="build")
 
     extends("python", when="+python")
